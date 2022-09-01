@@ -87,8 +87,20 @@ function addItemToCart(name) {
     drawCart()
   }
 }
+function drawImg(name) {
+  let template = ""
+
+  let allItems = [...vessels, ...iceCream, ...toppings]
+  let found = allItems.find(item => item.image)
+  template += `
+<img src="${
+    // @ts-ignore
+    found.image}
+`
+}
 
 function removeItem() {
+
 
 }
 
