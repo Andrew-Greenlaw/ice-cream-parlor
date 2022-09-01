@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Ice Cream Parlor</title>
+</head>
+
+<body>
+  <header></header>
+
+  <main class="container">
+    <section class="row">
+      <div class="col-md-5">
+        <div class="row cart-header text-info py-1 bg-light">
+          <div class="col-4">
+            <h2>Name</h2>
+          </div>
+          <div class="col-8 d-flex justify-content-evenly">
+            <h2>Qty</h2>
+            <h2>Each</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 bg-light">
+            <div class="row cart-item" id="cart">
+
+            </div>
+          </div>
+        </div>
+        <div class="row cart-header text-info py-1 bg-light">
+          <div class="col-12 text-end">
+            <div>Total: <span id="total">0.00</span></div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-7 text-center">
+        <div class="row ">
+          <div class="col-12 p-4">
+            <h1>Vessels</h1>
+          </div>
+          <!-- card -->
+          <div class="row justify-content-evenly">
+            <div class="col-md-3 bg-light">
+              <div onclick="addItemToCart('Waffle Cone')">
+                <img src="" alt="">
+                <div class="d-flex justify-content-evenly">
+                  <p>Waffle Cone</p>
+                  <p>$2</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 bg-light">
+              <div onclick="addItemToCart('Waffle Bowl')">
+                <img src="" alt="">
+                <div class="d-flex justify-content-evenly">
+                  <p>Waffle Bowl</p>
+                  <p>$4</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row ">
+          <!-- Ice Cream HEADER -->
+          <div class="col-12 p-4">
+            <h1>Ice Cream</h1>
+          </div>
+          <!-- card -->
+          <sdiv class="row justify-content-evenly">
+            <div class="col-md-3 bg-light">
+              <div onclick="addItemToCart('Cookie Dough')">
+                <img src="" alt="">
+                <div class="d-flex justify-content-evenly">
+                  <p>Cookie Dough</p>
+                  <p>$1</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 bg-light">
+              <div onclick="addItemToCart('Vanilla')">
+                <img src="" alt="">
+                <div class="d-flex justify-content-evenly">
+                  <p>Vanilla</p>
+                  <p>$1</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 bg-light">
+              <div onclick="addItemToCart('Strawberry')">
+                <img src="" alt="">
+                <div class="d-flex justify-content-evenly">
+                  <p>Strawberry</p>
+                  <p>$2</p>
+                </div>
+              </div>
+            </div>
+          </sdiv>
+        </div>
+        <div class="row ">
+          <!-- Toppings HEADER -->
+          <div class="col-12 p-4">
+            <h1>Toppings</h1>
+          </div>
+          <!-- card -->
+          <div class="row justify-content-evenly">
+            <div class="col-md-3 bg-light">
+              <div onclick="addItemToCart('Sprinkles')">
+                <img src="" alt="">
+                <div class="d-flex justify-content-evenly">
+                  <p>Sprinkles</p>
+                  <p>$2</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 bg-light">
+              <div onclick="addItemToCart('Choclate Chips')">
+                <img src="" alt="">
+                <div class="d-flex justify-content-evenly">
+                  <p>Choclate Chips</p>
+                  <p>$2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer></footer>
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"
+    defer></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
